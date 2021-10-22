@@ -2,28 +2,17 @@ package blatt2.aufgabe4;
 
 public class Salat {
     
-    private double preis;
-    private double menge;
+    private int preisInCent;
 
-    public Salat(double preis, double menge){
-        this.preis = preis;
-        this.menge = menge;
+    public Salat(int preisInCent){
+        this.preisInCent = preisInCent;
     }
 
-    public double getPreis() {
-        return this.preis;
+    public int getPreisInCent() {
+        return this.preisInCent;
     }
 
-    public void setPreis(float preis) {
-        this.preis = preis;
-    }
-
-    public double getMenge() {
-        return this.menge;
-    }
-
-    public void setMenge(float menge) {
-        this.menge = menge;
-    }
-    
+    public void setPreisInCent(int preisInCent) {
+        this.preisInCent = preisInCent;
+    }    
 }

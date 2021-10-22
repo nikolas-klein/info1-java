@@ -13,7 +13,12 @@ public class Sandwich {
   private Toast toastUnten;
   private Belag belag;
 
-  public double getKosten(){
-    return toastOben.getPreis()+ toastUnten.getPreis() + belag.getKosten();
+  public int printKosteninEuro(){
+    int kosten = toastOben.getPreisInCent()+ toastUnten.getPreisInCent() + belag.getKosten_inCent();
+    String ausgabe = String.valueOf(kosten);
+    StringBuilder sb = new StringBuilder(ausgabe);
+    sb.reverse().insert(2,',').reverse();
+    System.out.println("Die Kosten betragen" + sb +"€");
+    return kosten;
   }
 }

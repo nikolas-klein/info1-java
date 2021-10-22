@@ -2,30 +2,22 @@ package blatt2.aufgabe4;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import blatt2.aufgabe4.Belag;
-import blatt2.aufgabe4.Kaese;
-import blatt2.aufgabe4.Salat;
-import blatt2.aufgabe4.Sandwich;
-import blatt2.aufgabe4.Toast;
 import org.junit.jupiter.api.Test;
 
-class TestBelag {
+class BelagTest {
 
-  Kaese kaese1 = new Kaese(2.5F, 2);
-  Kaese kaese2 = new Kaese(5, 1);
-  Salat salat1 = new Salat(3.7, 0.5);
-  Salat salat2 = new Salat(1.5, 1.5);
-  Toast toast1 = new Toast(2);
-  Toast toast2 = new Toast(1.25F);
+  Kaese kaese1 = new Kaese(210);
+  Kaese kaese2 = new Kaese( 150);
+  Salat salat1 = new Salat(50);
+  Salat salat2 = new Salat(30);
   Belag belag1 = new Belag(kaese1, salat1);
   Belag belag2 = new Belag(kaese2, salat2);
-  Sandwich sandwich = new Sandwich(toast1, toast2, belag1);
 
 
   @Test
-  void BelagGetKosten() {
-    assertEquals(belag1.getKosten(), 6.85,0.0001);
-    assertEquals(belag2.getKosten(),7.25, 0.0001);
+  void BelagGetKosten_inCent() {
+    assertEquals(belag1.getKosten_inCent(),260);
+    assertEquals(belag2.getKosten_inCent(),180);
   }
 
   @Test

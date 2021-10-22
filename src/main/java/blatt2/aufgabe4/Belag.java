@@ -13,8 +13,8 @@ public class Belag {
   private Salat salat;
 
 
-  public double getKosten(){
-    return kaese.getMenge()*kaese.getPreis()+salat.getMenge()*salat.getPreis();
+  public int getKosten_inCent(){
+    return kaese.getPreisInCent()+salat.getPreisInCent();
   }
 
 }

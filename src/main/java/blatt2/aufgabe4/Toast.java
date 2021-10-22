@@ -2,18 +2,18 @@ package blatt2.aufgabe4;
 
 public class Toast {
     
-    private float preis;
+    private int preisInCent;
 
-    public Toast(float preis){
-        this.preis = preis;
+    public Toast(int preisInCent){
+        this.preisInCent = preisInCent;
     }
 
-    public float getPreis(){
-        return this.preis;
+    public int getPreisInCent(){
+        return this.preisInCent;
     }
 
-    public void setPreis(float preis){
-        this.preis = preis;
+    public void setPreisInCent(int preisInCent){
+        this.preisInCent = preisInCent;
     }
 
 }

@@ -2,27 +2,17 @@ package blatt2.aufgabe4;
 
 public class Kaese {
     
-    private float preis;
-    private float menge;
+    private int preisInCent;
 
-    public Kaese(float preis, float menge){
-        this.preis = preis;
-        this.menge = menge;
+    public Kaese(int preisInCent){
+        this.preisInCent = preisInCent;
     }
 
-    public float getPreis() {
-        return preis;
+    public int getPreisInCent(){
+        return this.preisInCent;
     }
 
-    public void setPreis(float preis) {
-        this.preis = preis;
-    }
-
-    public float getMenge() {
-        return menge;
-    }
-
-    public void setMenge(float menge) {
-        this.menge = menge;
+    public void setPreisInCent(int preisInCent){
+        this.preisInCent = preisInCent;
     }
 }
