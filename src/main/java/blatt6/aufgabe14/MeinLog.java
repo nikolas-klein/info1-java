@@ -6,7 +6,7 @@ public class MeinLog {
 
         if(z<0) throw new SchlechtesArgumentException("Die Zahl muss größer als 0 sein");
         if(z == 0) return Double.NEGATIVE_INFINITY;
-        if(z==Double.POSITIVE_INFINITY) return Double.POSITIVE_INFINITY;
+        if(z==Double.POSITIVE_INFINITY) return z;
         return berechneLn(z);
 
     }
@@ -20,7 +20,7 @@ public class MeinLog {
         int n = 1;
         while (Math.abs((Math.pow((x), n)) / n) >= 0.000001) {
             ergebnis +=(Math.pow(x,n)/n)-(Math.pow(x,(n+1))/(n+1));
-            n+=2;
+            n++;
         }
         return ergebnis;
     }
